@@ -1,0 +1,370 @@
+/* Base Styles */
+
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+.btn-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.banner-section-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 100px 15px;
+    text-align: center;
+    margin-top: 60px;
+    /* Height of the fixed navbar */
+}
+
+.banner-section-bg-container h1 {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.banner-section-bg-container p {
+    margin-bottom: 20px;
+}
+
+.custom-button{
+    border-radius: 10px;
+    border: none;
+}
+.custom-outline-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.item-type-container {
+    padding: 20px;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-outline-button {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.wcu-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.wcu-card-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.menu-item-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+.menu-item-image {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.payment-image-menu {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.offers {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.payment-card-img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-header,
+.modal-footer {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.modal-header .close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 60px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.col-md-4,
+.col-md-6,
+.col-md-7,
+.col-md-5 {
+    flex: 1;
+    padding: 15px;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 30px);
+}
+
+.col-md-6 {
+    flex: 1 1 calc(50% - 30px);
+}
+
+.col-md-7 {
+    flex: 1 1 calc(58.333% - 30px);
+}
+
+.col-md-5 {
+    flex: 1 1 calc(41.666% - 30px);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.fab {
+    font-size: 1.2em;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner-section-bg-container {
+        padding: 60px 10px;
+    }
+
+    .banner-section-bg-container h1 {
+        font-size: 36px;
+    }
+
+    .banner-section-bg-container p {
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
+
+    .col-md-4,
+    .col-md-6,
+    .col-md-7,
+    .col-md-5 {
+        flex: 1 1 100%;
+    }
+
+    .wcu-card,
+    .menu-item-card {
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-section-bg-container h1 {
+        font-size: 28px;
+    }
+
+    .banner-section-bg-container p {
+        font-size: 16px;
+    }
+
+    .custom-button,
+    .custom-outline-button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .wcu-card-image,
+    .menu-item-image {
+        width: 70px;
+    }
+
+    .footer-section-mail-id,
+    .footer-section-address {
+        font-size: 14px;
+    }
+
+    .follow-us-icon-container {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+}
